@@ -7,6 +7,7 @@
 - 기본 스택: Next.js App Router, TypeScript, Tailwind CSS, Clerk, Supabase
 - 패키지 매니저: pnpm
 - 구조 원칙: Next.js 라우팅은 `src/app`에서 관리하고, 애플리케이션 내부 구조는 FSD를 따른다.
+- 예외 규칙: Next.js의 예약 폴더인 `src/pages`와 충돌하지 않도록, 이 프로젝트에서는 FSD 페이지 레이어를 `src/views`로 둔다.
 
 ## 구조 원칙
 
@@ -20,7 +21,7 @@
 ```txt
 src/
   app/        # Next.js route entry, layout, providers, globals
-  pages/      # page composition
+  views/      # FSD page layer replacement for Next.js App Router
   widgets/    # large UI blocks
   features/   # user actions
   entities/   # domain models
@@ -29,8 +30,8 @@ src/
 
 ## 레이어 import 규칙
 
-- `app` -> `pages`, `widgets`, `features`, `entities`, `shared`
-- `pages` -> `widgets`, `features`, `entities`, `shared`
+- `app` -> `views`, `widgets`, `features`, `entities`, `shared`
+- `views` -> `widgets`, `features`, `entities`, `shared`
 - `widgets` -> `features`, `entities`, `shared`
 - `features` -> `entities`, `shared`
 - `entities` -> `shared`

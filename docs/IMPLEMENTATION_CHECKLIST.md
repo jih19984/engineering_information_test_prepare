@@ -13,20 +13,20 @@
 ```md
 - [x] Next.js 프로젝트 생성
 - [ ] Clerk 로그인 연동
-메모: Clerk 대시보드에서 Redirect URL 설정 필요
+      메모: Clerk 대시보드에서 Redirect URL 설정 필요
 ```
 
 ---
 
 ## 1. 프로젝트 초기 세팅
 
-- [ ] `Next.js App Router` 프로젝트 생성
-- [ ] `TypeScript` 사용 여부 확정
-- [ ] `Tailwind CSS` 설정 완료
-- [ ] 기본 실행 확인 (`pnpm dev`)
-- [ ] Git 저장소 초기화
-- [ ] `.gitignore` 확인
-- [ ] 폴더 구조 초안 정리
+- [x] `Next.js App Router` 프로젝트 생성
+- [x] `TypeScript` 사용 여부 확정
+- [x] `Tailwind CSS` 설정 완료
+- [x] 기본 실행 확인 (`npm run dev`)
+- [x] Git 저장소 초기화
+- [x] `.gitignore` 확인
+- [x] 폴더 구조 초안 정리
 
 완료 기준:
 
@@ -286,8 +286,8 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=
 
 최종 점검:
 
-- [ ] `pnpm lint` 통과
-- [ ] `pnpm build` 통과
+- [ ] `npm run lint` 통과
+- [ ] `npm run build` 통과
 - [ ] 배포 후 로그인과 데이터 저장이 실제로 동작한다
 
 ---
