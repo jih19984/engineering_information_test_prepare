@@ -5,6 +5,7 @@
 - 프로젝트명: ITPE Prep
 - 목적: 정보처리기사 실기 학습용 웹서비스 MVP 구축
 - 기본 스택: Next.js App Router, TypeScript, Tailwind CSS, Clerk, Supabase
+- 패키지 매니저: pnpm
 - 구조 원칙: Next.js 라우팅은 `src/app`에서 관리하고, 애플리케이션 내부 구조는 FSD를 따른다.
 
 ## 구조 원칙
@@ -55,7 +56,6 @@ src/
 
 ## 검증 원칙
 
-- 완료 전 `npm run lint`, `npm run test`, `npm run build`를 순서대로 확인한다.
+- 완료 전 `pnpm lint`, `pnpm test`, `pnpm build`를 순서대로 확인한다.
 - 검증 결과가 없으면 완료로 간주하지 않는다.
 - 완료 기준이 변경되면 `current-task.md`도 함께 갱신한다.
-

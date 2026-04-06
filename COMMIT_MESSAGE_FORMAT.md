@@ -90,9 +90,9 @@ What:
 - 핵심 변경 사항을 적는다
 
 Validation:
-- npm run lint
-- npm run test
-- npm run build
+- pnpm lint
+- pnpm test
+- pnpm build
 ```
 
 ## 커밋 게이트
@@ -101,8 +101,8 @@ Validation:
 
 코드 또는 설정 변경의 최소 게이트:
 
-- `npm run lint`
-- `npm run test`
-- `npm run build`
+- `pnpm lint`
+- `pnpm test`
+- `pnpm build`
 
 셋 중 하나라도 실패하면 먼저 수정하거나, 작업 상태를 `Done`으로 표시하지 않는다.

@@ -12,9 +12,9 @@
 - 실제로 바뀐 핵심 내용
 
 ## 검증
-- `npm run lint`: 통과 / 실패
-- `npm run test`: 통과 / 실패
-- `npm run build`: 통과 / 실패
+- `pnpm lint`: 통과 / 실패
+- `pnpm test`: 통과 / 실패
+- `pnpm build`: 통과 / 실패
 
 ## 상태
 - Done / In Progress / Blocked
@@ -26,6 +26,5 @@
 ## 규칙
 
 - 검증 결과 없이 `Done`이라고 쓰지 않는다.
-- `lint`, `test`, `build` 중 하나라도 실패하면 `Done`을 쓰지 않는다.
+- `pnpm lint`, `pnpm test`, `pnpm build` 중 하나라도 실패하면 `Done`을 쓰지 않는다.
 - 검증을 못 돌렸다면 이유를 적고 `Blocked` 또는 `In Progress`로 둔다.
-

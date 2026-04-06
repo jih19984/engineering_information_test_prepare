@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ITPE Prep
 
-## Getting Started
+정보처리기사 실기 학습용 웹서비스 프로젝트입니다.
 
-First, run the development server:
+## 개발 환경
+
+- Next.js App Router
+- TypeScript
+- Tailwind CSS
+- pnpm
+
+## 시작하기
+
+의존성 설치:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+개발 서버 실행:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+브라우저에서 [http://localhost:3000](http://localhost:3000)을 열면 됩니다.
 
-## Learn More
+## 검증 명령
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+pnpm lint
+pnpm test
+pnpm build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 작업 규칙
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+하네스 문서를 먼저 읽고 진행합니다.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [AGENTS.md](C:\Users\SSAFY\Desktop\engineering_information_test_prepare\AGENTS.md)
+- [Architecture.md](C:\Users\SSAFY\Desktop\engineering_information_test_prepare\Architecture.md)
+- [current-task.md](C:\Users\SSAFY\Desktop\engineering_information_test_prepare\current-task.md)

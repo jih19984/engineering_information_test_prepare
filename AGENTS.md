@@ -17,17 +17,18 @@
 - `current-task.md`의 완료 기준을 만족하지 못하면 작업은 끝난 것이 아니다.
 - 완료 보고는 항상 `RESULT_SUMMARY_FORMAT.md` 형식을 따른다.
 - 커밋 메시지는 항상 `COMMIT_MESSAGE_FORMAT.md` 형식을 따른다.
+- 패키지 매니저는 `pnpm`으로 고정한다.
 - 코드나 설정을 변경한 작업은 아래 검증을 모두 통과해야 `Done`이다.
-  - `npm run lint`
-  - `npm run test`
-  - `npm run build`
+  - `pnpm lint`
+  - `pnpm test`
+  - `pnpm build`
 
 ## 작업 순서
 
 1. `Architecture.md`로 구조와 제약 확인
 2. `current-task.md`로 현재 작업과 완료 기준 확인
 3. 작업 수행
-4. `lint`, `test`, `build` 검증
+4. `pnpm lint`, `pnpm test`, `pnpm build` 검증
 5. 결과를 정해진 형식으로 요약
 
 ## Done 정의
@@ -36,7 +37,7 @@
 
 - 요구사항 반영 완료
 - 문서와 실제 상태 일치
-- `npm run lint` 통과
-- `npm run test` 통과
-- `npm run build` 통과
+- `pnpm lint` 통과
+- `pnpm test` 통과
+- `pnpm build` 통과
 - 결과 요약 작성 완료

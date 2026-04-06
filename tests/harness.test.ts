@@ -31,9 +31,9 @@ describe("harness baseline", () => {
   it("documents done as lint, test, and build passing", () => {
     const content = read("AGENTS.md");
 
-    expect(content).toContain("npm run lint");
-    expect(content).toContain("npm run test");
-    expect(content).toContain("npm run build");
+    expect(content).toContain("pnpm lint");
+    expect(content).toContain("pnpm test");
+    expect(content).toContain("pnpm build");
     expect(content).toContain("Done");
   });
 
@@ -44,5 +44,6 @@ describe("harness baseline", () => {
     expect(content).toContain("feat(problem):");
     expect(content).toContain("docs(harness):");
     expect(content).toContain("커밋 게이트");
+    expect(content).toContain("pnpm lint");
   });
 });

@@ -23,7 +23,7 @@
 - [ ] `Next.js App Router` 프로젝트 생성
 - [ ] `TypeScript` 사용 여부 확정
 - [ ] `Tailwind CSS` 설정 완료
-- [ ] 기본 실행 확인 (`npm run dev`)
+- [ ] 기본 실행 확인 (`pnpm dev`)
 - [ ] Git 저장소 초기화
 - [ ] `.gitignore` 확인
 - [ ] 폴더 구조 초안 정리
@@ -286,8 +286,8 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=
 
 최종 점검:
 
-- [ ] `npm run lint` 통과
-- [ ] `npm run build` 통과
+- [ ] `pnpm lint` 통과
+- [ ] `pnpm build` 통과
 - [ ] 배포 후 로그인과 데이터 저장이 실제로 동작한다
 
 ---
@@ -313,4 +313,3 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=
 - [ ] 오늘 작업 목표 정하기
 - [ ] 막힌 부분 기록하기
 - [ ] 다음 작업 3개 적기
-
