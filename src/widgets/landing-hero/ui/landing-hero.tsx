@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { authConfig } from "@/shared/config/auth";
 import { siteConfig } from "@/shared/config/site";
 import { PageShell } from "@/shared/ui/page-shell";
 
@@ -48,10 +49,10 @@ export function LandingHero() {
             </ul>
             <div className="flex flex-wrap gap-3">
               <Link
-                href="/problems"
+                href={authConfig.signInUrl}
                 className="rounded-full bg-accent px-5 py-3 text-sm font-medium text-white transition hover:bg-accent-strong"
               >
-                구조가 잡힌 문제 목록 보기
+                로그인하고 학습 시작하기
               </Link>
               <Link
                 href="#study-roadmap"

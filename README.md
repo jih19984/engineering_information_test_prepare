@@ -25,6 +25,19 @@ pnpm dev
 
 브라우저에서 [http://localhost:3000](http://localhost:3000)을 열면 됩니다.
 
+## 인증 환경 변수
+
+Clerk 인증 구조가 포함되어 있으므로 아래 환경 변수를 `.env.local`에 설정하면 됩니다.
+
+```bash
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+```
+
+환경 변수가 없으면 앱은 빌드 가능 상태를 유지하고, `/sign-in`과 `/sign-up`에서는 설정 안내 화면을 보여줍니다.
+
 ## 검증 명령
 
 ```bash

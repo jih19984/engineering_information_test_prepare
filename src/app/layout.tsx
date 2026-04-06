@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
+import { ClerkProvider } from "@clerk/nextjs";
 import { Noto_Sans_KR, Space_Grotesk } from "next/font/google";
+
+import { isClerkPublishableKeySet } from "@/shared/config/auth";
+import { SiteHeader } from "@/widgets/site-header/ui/site-header";
+
 import "./globals.css";
 
 const displayFont = Space_Grotesk({
@@ -22,12 +27,21 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
+  const app = (
     <html
       lang="ko"
       className={`${displayFont.variable} ${bodyFont.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <SiteHeader authEnabled={isClerkPublishableKeySet} />
+        {children}
+      </body>
     </html>
   );
+
+  if (!isClerkPublishableKeySet) {
+    return app;
+  }
+
+  return <ClerkProvider afterSignOutUrl="/">{app}</ClerkProvider>;
 }
