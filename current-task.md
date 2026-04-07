@@ -2,38 +2,32 @@
 
 ## Current Task
 
-- 제목: Clerk 인증 구조 추가
+- 제목: Clerk proxy 파일 위치 수정
 - 상태: Done
 - 우선순위: Highest
 
 ## 목표
 
-- Next.js App Router에 Clerk 인증 구조를 연결한다.
-- 로그인/회원가입 라우트를 추가하고, 보호 라우트 정책을 넣는다.
-- 환경 변수가 없어도 개발과 빌드가 깨지지 않게 안전 모드를 유지한다.
+- Clerk middleware가 실제로 실행되도록 proxy 파일 위치를 Next.js 규칙에 맞춘다.
+- `src` 디렉터리를 사용하는 현재 프로젝트 구조와 맞게 인증 보호 라우트가 동작하도록 한다.
+- 수정 후에도 lint, test, build가 모두 통과하는 상태를 유지한다.
 
 ## In Scope
 
-- `@clerk/nextjs` 의존성 추가
-- `ClerkProvider` 연결
-- `/sign-in`, `/sign-up` 라우트 추가
-- `/problems`, `/notes` 보호 라우트 정책 추가
-- `.env.example` 추가
-- 검증 실행
+- `proxy.ts`를 `src/proxy.ts`로 이동
+- 동작 검증
+- 현재 작업 문서 갱신
 
 ## Out of Scope
 
 - Supabase 연동
-- 실제 사용자 데이터 저장
-- 문제 제출 기능 구현
+- 인증 UI 변경
+- 문제 풀이 기능 구현
 
 ## Definition of Done
 
-- [x] `ClerkProvider`가 앱 레이아웃에 연결돼 있다
-- [x] `/sign-in`, `/sign-up` 라우트가 존재한다
-- [x] `/problems`, `/notes` 보호 정책이 존재한다
-- [x] `.env.example`에 Clerk 환경 변수가 정리돼 있다
-- [x] 환경 변수가 없어도 앱이 빌드 가능하다
+- [x] Clerk proxy 파일이 `src/proxy.ts`에 존재한다
+- [x] 루트의 `proxy.ts`가 제거된다
 - [x] `pnpm lint` 통과
 - [x] `pnpm test` 통과
 - [x] `pnpm build` 통과
