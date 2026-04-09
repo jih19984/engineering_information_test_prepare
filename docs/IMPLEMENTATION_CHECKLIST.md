@@ -23,7 +23,7 @@
 - [x] `Next.js App Router` 프로젝트 생성
 - [x] `TypeScript` 사용 여부 확정
 - [x] `Tailwind CSS` 설정 완료
-- [x] 기본 실행 확인 (`npm run dev`)
+- [x] 기본 실행 확인 (`pnpm dev`)
 - [x] Git 저장소 초기화
 - [x] `.gitignore` 확인
 - [x] 폴더 구조 초안 정리
@@ -51,7 +51,7 @@ CLERK_SECRET_KEY=
 NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
 NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
 NEXT_PUBLIC_SUPABASE_URL=
-NEXT_PUBLIC_SUPABASE_ANON_KEY=
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=
 ```
 
 완료 기준:
@@ -286,8 +286,8 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=
 
 최종 점검:
 
-- [ ] `npm run lint` 통과
-- [ ] `npm run build` 통과
+- [ ] `pnpm lint` 통과
+- [ ] `pnpm build` 통과
 - [ ] 배포 후 로그인과 데이터 저장이 실제로 동작한다
 
 ---
